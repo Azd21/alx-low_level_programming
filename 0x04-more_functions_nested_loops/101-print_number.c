@@ -4,8 +4,10 @@
 * 0size: print size
 * Return: Always 0.
 */
-void print_number(int size)
+void print_triangle(int size)
+
 {
+
 
 int i;
 int z;
