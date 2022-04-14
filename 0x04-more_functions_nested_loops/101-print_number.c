@@ -4,7 +4,7 @@
 * 0size: print size
 * Return: Always 0.
 */
-void print_number(int size) 
+void print_number(int size)
 {
 
 int i;
@@ -30,6 +30,7 @@ _putchar (35);
 d--;
 
 _putchar ('\n');
+
 
 }
 
