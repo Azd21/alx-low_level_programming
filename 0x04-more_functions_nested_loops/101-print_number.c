@@ -1,10 +1,10 @@
 #include "main.h"
 /**
-* print_number - that prints an integer
-*@n: print int
+* print_number - prints triangle
+* 0size: print size
 * Return: Always 0.
 */
-void print_number(int n)
+void print_number(int size) 
 {
 
 int i;
