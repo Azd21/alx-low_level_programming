@@ -34,6 +34,13 @@ d--;
 
 _putchar ('\n');
 
+
 }
 
+}
+
+else
+{
+_putchar ('\n');
+}
 }
