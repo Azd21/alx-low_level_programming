@@ -1,26 +1,22 @@
 #include "main.h"
 
 /**
- *_calloc -allocated memoria for nmeb elemn de zise bytes
- *@nmemb: number of element in the array
- *@size: bytes for each position in array
- *Return: pointer void
+ * array_range - creates an array of integers
+ * @min: minimum
+ * @max: maximum
+ * Return: array
  */
-void *_calloc(unsigned int nmemb, unsigned int size)
+int *array_range(int min, int max)
 {
-char *p;
-unsigned int i;
+	int *arr, i = 0, t = min;
 
-if (nmemb == 0 || size == 0)
-return (NULL);
+	if (min > max)
+		return (0);
+	arr = malloc((max - min + 1) * sizeof(int));
 
-p = malloc(nmemb * size);
-if (p == NULL)
-return (NULL);
-
-for (i = 0; i < nmemb * size; i++)
-p[i] = 0;
-
-return (p);
-
+	if (!arr)
+		return (0);
+	while (i <= max - min)
+		arr[i++] = t++;
+	return (arr);
 }
